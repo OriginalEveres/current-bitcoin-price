@@ -1,0 +1,38 @@
+{
+  "name": "current-bitcoin-price",
+  "version": "1.0.0",
+  "description": "NPM lib that, let's wait for it, has method to get you the current BTC price.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "keywords": [
+    "bitcoin"
+  ],
+  "homepage": "https://github.com/OriginalEveres/current-bitcoin-price#readme",
+  "bugs": {
+    "url": "https://github.com/OriginalEveres/current-bitcoin-price/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OriginalEveres/current-bitcoin-price.git"
+  },
+  "license": "MIT",
+  "author": "Matthew Husak",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

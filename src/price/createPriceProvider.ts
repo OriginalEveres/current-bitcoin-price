@@ -1,8 +1,5 @@
 import {CoinGeckoProvider} from "./coinGecko/CoinGeckoProvider.js";
-
-export enum PriceProviders {
-    COINGECKO = 'coingecko',
-}
+import {PriceProviders} from "./PriceProviders.js";
 
 export const createPriceProvider = (provider: PriceProviders) => {
     switch (provider) {

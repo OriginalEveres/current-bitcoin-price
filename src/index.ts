@@ -3,5 +3,6 @@
  */
 export {PriceProvider} from "./price/PriceProvider.js";
 
-export {PriceProviders, createPriceProvider} from "./price/createPriceProvider.js";
+export {createPriceProvider} from "./price/createPriceProvider.js";
 export {FIAT} from "./types.js";
+export {PriceProviders} from "./price/PriceProviders.js";

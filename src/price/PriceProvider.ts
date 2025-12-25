@@ -48,14 +48,13 @@ export abstract class PriceProvider {
      * Constructor for PriceProvider.
      * @param apiKey
      */
-    constructor(apiKey?: string) {
+    protected constructor(apiKey?: string) {
         if (apiKey) this.apiKey = apiKey;
     }
 
     /**
      * Queries the API endpoint with optional parameters.
      * @param endpoint
-     * @param params
      * @protected
      */
     protected async queryApi<T>(endpoint: string): Promise<Result<T, string>> {
@@ -73,7 +72,9 @@ export abstract class PriceProvider {
 
         // ROADMAP: implement data validation here for T
 
-        return ok(result.json() as T);
+        const parsed = await result.json() as T;
+
+        return ok(parsed);
     }
 
     /**

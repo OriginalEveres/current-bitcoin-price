@@ -27,12 +27,16 @@
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
     "clean": "rm -rf dist",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:integration": "RUN_INTEGRATION=true vitest --run --include src/price/**/CoinGeckoProvider.integration.test.ts"
   },
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
   }
 }

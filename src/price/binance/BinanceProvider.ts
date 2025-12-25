@@ -1,6 +1,6 @@
-import {PriceProvider} from "../PriceProvider.js";
-import {ok, err} from "../../utils.js";
-import {FIAT, type Result} from "../../types.js";
+import { PriceProvider } from '../PriceProvider.js';
+import { ok, err } from '../../utils.js';
+import { FIAT, type Result } from '../../types.js';
 
 /**
  * Implementation of PriceProvider for Binance public API.
@@ -24,7 +24,7 @@ export class BinanceProvider extends PriceProvider {
 
   protected prepareRequestHeaders(): Record<string, string> {
     return {
-      'Accept': 'application/json'
+      Accept: 'application/json',
     };
   }
 
@@ -65,4 +65,3 @@ export class BinanceProvider extends PriceProvider {
 }
 
 export default BinanceProvider;
-

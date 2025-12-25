@@ -58,7 +58,7 @@ export abstract class PriceProvider {
      * @param params
      * @protected
      */
-    protected async queryApi<T>(endpoint: string, params?: Record<string, string | number>): Promise<Result<T, string>> {
+    protected async queryApi<T>(endpoint: string): Promise<Result<T, string>> {
         const headers = this.prepareRequestHeaders() || {};
         const url = this.setupUrl(endpoint);
 

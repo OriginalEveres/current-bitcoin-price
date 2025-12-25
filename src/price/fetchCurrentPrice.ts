@@ -1,6 +1,6 @@
-import {PriceProviders} from "./PriceProviders.js";
+import { PriceProviders } from './PriceProviders.js';
 
 export type fetchCurrentPriceParams = {
-    provider: PriceProviders;
-}
-export const fetchCurrentPrice = async () => {}
+  provider: PriceProviders;
+};
+export const fetchCurrentPrice = async () => {};

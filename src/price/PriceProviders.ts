@@ -1,4 +1,4 @@
 export enum PriceProviders {
-    COINGECKO = 'coingecko',
-    BINANCE = 'binance',
+  COINGECKO = 'coingecko',
+  BINANCE = 'binance',
 }

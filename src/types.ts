@@ -11,3 +11,8 @@ export type Err<T> = {
 export type Result<T, E> = Ok<T> | Err<E>;
 
 export type Trend = 'up' | 'down' | 'stable';
+
+export enum FIAT {
+    USD = 'usd',
+    EUR = 'eur',
+}

@@ -1,7 +1,6 @@
 import {PriceProvider} from "../PriceProvider.js";
-import {FIAT} from "../PriceProviderFactory.js";
 import {err, ok} from "../../utils.js";
-import type {Result} from "../../types.js";
+import {FIAT, type Result} from "../../types.js";
 
 /**
  * Implementation of PriceProvider for CoinGecko API.

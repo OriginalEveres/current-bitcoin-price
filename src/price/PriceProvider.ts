@@ -1,5 +1,4 @@
-import type {Result, Trend} from "../types.js";
-import type {FIAT} from "./PriceProviderFactory.js";
+import {FIAT, type Result, type Trend} from "../types.js";
 import {ok, err} from "../utils.js";
 
 export abstract class PriceProvider {

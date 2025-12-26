@@ -62,6 +62,3 @@ if (res.success) console.log('price:', res.value)
 ## ❤️ Feel free to support
 Lately, I've been spending a lot of time building open-source libraries like this one. If you find it useful, consider supporting my work: `bc1qh9nvunhut73hqwf9rsd6l6c0dqqlkv9j3a723n`. More cool libraries are coming soon! 🙏
 
----
-
-(Full developer docs, tests, and implementation details remain in the repo for contributors — see the rest of this README.)

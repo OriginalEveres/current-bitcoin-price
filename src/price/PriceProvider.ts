@@ -122,4 +122,11 @@ export abstract class PriceProvider {
    * @protected
    */
   protected abstract prepareRequestHeaders(): Record<string, string>;
+
+  /**
+   * Public accessor for the last computed trend ('up'|'down'|'stable').
+   */
+  public getTrend(): Trend {
+    return this.trend;
+  }
 }

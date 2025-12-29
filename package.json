@@ -1,7 +1,7 @@
 {
   "name": "current-bitcoin-price",
-  "version": "1.0.0",
-  "description": "NPM lib that, let's wait for it, has method to get you the current BTC price.",
+  "version": "1.0.1",
+  "description": "Get current Bitcoin price in USD/EUR from CoinGecko, Binance & more. 1-line API.",
   "type": "module",
   "main": "./dist/index.js",
   "exports": {
@@ -10,7 +10,13 @@
     }
   },
   "keywords": [
-    "bitcoin"
+    "bitcoin",
+    "btc",
+    "crypto",
+    "price",
+    "ticker",
+    "coingecko",
+    "binance"
   ],
   "homepage": "https://github.com/OriginalEveres/current-bitcoin-price#readme",
   "bugs": {

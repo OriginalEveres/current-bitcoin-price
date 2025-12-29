@@ -1,3 +1,6 @@
+[![npm](https://img.shields.io/npm/v/current-bitcoin-price.svg)](https://npmjs.com/package/current-bitcoin-price)
+[![Downloads](https://img.shields.io/npm/dm/current-bitcoin-price.svg)](https://npm-stat.com)
+
 # 🚀 current-bitcoin-price
 
 A tiny, friendly TypeScript library to get the current Bitcoin price from pluggable providers (CoinGecko, Binance, ...). 🎯

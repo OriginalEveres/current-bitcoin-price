@@ -2,6 +2,7 @@ import { CoinGeckoProvider } from './coinGecko/CoinGeckoProvider.js';
 import { PriceProviders } from './PriceProviders.js';
 import BinanceProvider from './binance/BinanceProvider.js';
 import CoinDeskProvider from './coinDesk/CoinDeskProvider.js';
+import CoinBaseProvider from './coinbase/CoinBaseProvider.js';
 
 export const createPriceProvider = (provider: PriceProviders) => {
   switch (provider) {
@@ -11,6 +12,8 @@ export const createPriceProvider = (provider: PriceProviders) => {
       return new BinanceProvider();
     case PriceProviders.COINDESK:
       return new CoinDeskProvider();
+    case PriceProviders.COINBASE:
+      return new CoinBaseProvider();
     default:
       throw new Error(`Unsupported price provider: ${provider}`);
   }

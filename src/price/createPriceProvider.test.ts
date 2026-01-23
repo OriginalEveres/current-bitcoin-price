@@ -3,6 +3,8 @@ import { createPriceProvider } from './createPriceProvider.js';
 import { CoinGeckoProvider } from './coinGecko/CoinGeckoProvider.js';
 import { PriceProviders } from './PriceProviders.js';
 import BinanceProvider from './binance/BinanceProvider.js';
+import CoinDeskProvider from './coinDesk/CoinDeskProvider.js';
+import CoinBaseProvider from './coinbase/CoinBaseProvider.js';
 
 describe(createPriceProvider.name, () => {
   it('should resolve a correct provider (CoinGecko)', () => {
@@ -13,6 +15,16 @@ describe(createPriceProvider.name, () => {
   it('should resolve a correct provider (Binance)', () => {
     const provider = createPriceProvider(PriceProviders.BINANCE);
     assert.equal(provider.constructor.name, BinanceProvider.name);
+  });
+
+  it('should resolve a correct provider (CoinDesk)', () => {
+    const provider = createPriceProvider(PriceProviders.COINDESK);
+    assert.equal(provider.constructor.name, CoinDeskProvider.name);
+  });
+
+  it('should resolve a correct provider (CoinBase)', () => {
+    const provider = createPriceProvider(PriceProviders.COINBASE);
+    assert.equal(provider.constructor.name, CoinBaseProvider.name);
   });
 
   it('should throw an error for unsupported provider', () => {

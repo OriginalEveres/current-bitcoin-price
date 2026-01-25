@@ -1,6 +1,6 @@
 {
   "name": "current-bitcoin-price",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get current Bitcoin price in USD/EUR from CoinGecko, Binance & more. 1-line API.",
   "type": "module",
   "main": "./dist/index.js",

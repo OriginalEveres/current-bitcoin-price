@@ -3,4 +3,5 @@ export enum PriceProviders {
   BINANCE = 'binance',
   COINDESK = 'coindesk',
   COINBASE = 'coinbase',
+  KRAKEN = 'kraken',
 }
